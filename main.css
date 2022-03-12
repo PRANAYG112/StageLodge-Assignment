@@ -862,6 +862,18 @@ a:active {
     position: fixed;
 }
 
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
 @media (min-width:0px) and (max-width:450px) {
     .reserv {
         display: none;
@@ -926,6 +938,26 @@ a:active {
     .follow_title label {
         font-size: 30px;
         font-weight: 500;
+    }
+    .languages_cont {
+        flex-direction: column;
+    }
+    .footer_li {
+        flex-direction: column;
+    }
+    .ul_list {
+        text-align: left !important;
+    }
+    .ul_cities {
+        flex-direction: column;
+        text-align: left;
+    }
+    .footer_logo {
+        width: 80%;
+        height: 80%;
+    }
+    .dash {
+        display: none;
     }
 }
 
