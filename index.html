@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500&family=Lobster&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>StageLodge</title>
+</head>
+
+<body>
+    <div class="heading">
+        <a name="top"></a>
+        <div id="main">
+            <div class="blank"></div>
+            <div class="logo">
+                <img class="logo_img" src="./images/logo-new.webp" alt="">
+            </div>
+            <div class="reserv">
+                <h3>RESERVATIONS</h3>
+                <small>LOWEST RATES GUARANTED</small>
+            </div>
+        </div>
+        <div class="video">
+            <video width="100%" height="100%" controls>
+                <source src="./video/Video_Website.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a id="close" class="closebtn" onclick="closeNav()">×</button>
+            <a id="extmenu" href="javascript:void(0)" class=" openbtn" onclick="extendNav()"> ☰</a>
+        <span class="d-flex social_cont mt-5">
+                <a href="#" class="blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook mt-3 face"
+                        width="40" height="90" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg></a>
+                <a href="#" class="red"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="40"
+                        height="90" class="bi bi-youtube mt-3 face" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg></a>
+                <a href="#" class="red"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="40"
+                        height="90" class="bi bi-flower1 mt-3 face" viewBox="0 0 16 16">
+                        <path
+                            d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg></a>
+            </span>
+    </div>
+
+    <div class="container-fluid info">
+        <div class="container mb-3">
+            <div class="welcome">
+                <div class="text-center">
+                    <br>
+                    <br>
+                    <h4 class="wlcto ">Welcome To</h4>
+                    <h2 class="title">Stage Coach Lodge</h2>
+                </div>
+                <h6 class="title2 mt-3">Top Ranked Hotel In Monterey</h6>
+                <p>It is our pleasure to welcome you and your family to the beautiful Monterey Peninsula. The Stage Coach Lodge offers easy access to the various tourist attractions located in and around the Peninsula with newly remodeled air-conditioned
+                    hotel rooms. Simply make a right turn onto Tenth Street when exiting the Downtown Monterey exit off of Highway 1 and you’ll find our hotel nestled in a quiet residential neighborhood within a short stroll to Lake El Estero, Dennis
+                    the Menace Park, a variety of shops and restaurants, and of course, the beach. Our Monterey hotel is also within walking distance to the Naval Postgraduate School and Hyatt Regency Conference Center. You can drive to downtown, Fisherman’s
+                    Wharf, Cannery Row and the Monterey Bay Aquarium or hop back onto HWY 1 to get to Laguna Seca Raceway, the Monterey Fairgrounds, Carmel and the 17 Mile Drive, which are all within minutes of our property.
+                </p>
+                <div id="panel">
+
+                    <h6 class="title2 mt-3">Monterey Hotel Rooms</h6>
+                    <p>This Lodge offers a plentiful selection of well-appointed and newly remodeled room types from a King Honeymoon Suite to Standard Double Rooms that offer accommodations for up to four guests. All rooms are equipped with air-conditioning,
+                        microwave/refrigerators, 42 inch 1080i HD LCD cable TV, Keurig coffee maker, high-speed wireless internet, free local calls, in-room safe, and iron & ironing boards and granite bathrooms with full baths with hair dryers. The Stage
+                        Coach Lodge also offers an outdoor swimming pool and great landscaping and on-site laundry. The Lodge also has a diver’s wash station for those who are diving in The Bay and a small Patio for those who just want to relax by our
+                        pool.
+                        <br> Spacious and comfortable rooms and suites make the Stage Coach Lodge the perfect setting for family reunions, corporate events, or a romantic gateway. Our management and staff take great satisfaction in providing our guests
+                        with the highest levels of professional service and hospitality. We have also just recently added a Diver's Quarters with a full dive equipment washbasin and showers so you can make the Stage Coach Lodge your place to stay when
+                        diving off the Monterey Coast. The staff and management of the Stage Coach Lodge invite you to join us on your “coastal experience”.
+                    </p>
+                    <h6 class="title2 mt-3">Monterey Sightseeing & Tourism</h6>
+                    <p>The Monterey Peninsula offers the vacation experience of a lifetime with a beauty that entices visitors from all over the world. Monterey is located along the central coast of California about 120 miles south of San Francisco. The
+                        Peninsula is one of the most scenic areas of the world offering great ocean vistas and the famed 17 Mile Drive, a coastal toll road that offers breathtaking views of the bountiful Pacific Ocean and the rolling green hills of the
+                        world-famous Pebble Beach and Spyglass Golf Courses.
+                    </p>
+                    <h6 class="title2 mt-3">Monterey, CA Attractions</h6>
+                    <p>Monterey is also home to the world's largest sea life exhibit, the Monterey Bay Aquarium. Pacific Grove, the host to one of the oldest working lighthouses on the west coast, comes alive when the monarch butterfly populations migrate
+                        to this tiny coastal town. Carmel offers a picturesque white sand beach and old-world charm with its quaint shops. These spectacular beaches, nine world champion golf courses, historic old adobes, Fisherman's Wharf, infamous Cannery
+                        Row, fabulous shopping, and gourmet restaurants all await you. And The Stage Coach Lodge offers the perfect quaint and memorable place to stay when visiting Monterey.
+                    </p>
+                </div>
+
+                <div class="text-center mb-5 more">
+                    <button id="flip" class="read">Read more</button>
+                    <span class="btn-icon"><img src="./images/bell-ring.png" alt="" width="30" height="30"></span>
+                </div>
+            </div>
+        </div> <br>
+    </div>
+
+
+    <section class="rooms">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="room_img col-md-7 col-sm-12 col-12">
+
+                    <div class="overlay1">
+                        <p>Treat Yourself with our</p>
+                        <label>Spacious And</label>
+                        <label>Luxurious Rooms</label>
+                    </div>
+
+                </div>
+                <div class="room_content col-md-5 col-sm-12 col-12">
+                    <h3 class="geust_title">GEUST</h3>
+                    <h4 class="rooms_title">ROOMS</h4>
+                    <p class="text-justify">The Monterey Stage Coach Lodge offers premium accommodation options in Monterey. Our well-appointed Monterey Hotel Rooms will help you enjoy a luxurious stay in Monterey. Whether you are a business traveler or you are on a vacation,
+                        we assure you that you will find our Monterey hotel rooms to be a choice you won’t regret for your accommodation needs.</p>
+                    <p class="text-justify">We have a variety of amenities to provide you with the most comfortable stay in Monterey. At the same time, at the Monterey Stage Coach Lodge, we are also very much aware of the fact that great hotel accommodations are not just a matter
+                        of cozy rooms and a variety of amenities, which we have, but the overall experience lies in serving every guest with a smile. We have a very friendly and helpful staff that is ready to go the extra mile to ensure that you enjoy
+                        your time in Monterey with a memorable stay. You will love our hospitality and our friendly services.
+                    </p>
+                    <div class="text-center more">
+                        <button class="view brown hover-sweep-to-left">View more</button>
+                        <span class="bell"><img src="./images/bell-ring.png" alt="" width="30" height="30"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container-fluid mt-3 mb-3">
+            <div class="row gall_sm">
+                <div class="col-md-5 photo mb-3">
+                    <h3 class="title_gallery">PHOTO GALLERY FOR STAGE COACH LODGE</h3>
+                    <p class="gallery_descp text-center">We invite you to look through our photo gallery. Time is precious, and we have added designer features and modern amenities to our property to ensure that your time with us is comfortable and memorable. We look forward to hosting you
+                        on your next visit to Monterey, California.</p>
+                    <div class="text-center more">
+                        <button class="view brown">View more</button>
+                        <span class="bell"><img src="./images/bell-ring.png" alt="" width="30" height="30"></span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 welcome_property mb-3">
+                    <h3 class="welcome_overlay">welcome to the heart of our property</h3>
+                    <p class="overlay_welcome">
+                        Our front desk is more than just the reception area where we welcome our guests. It is a place to gather beside the fireplace, eat, meet new friends, and become part of our hospitality family. Join with friends and family at the heart of our Monterey
+                        property as a guest of the Stage Coach Lodge.
+                    </p>
+
+                </div>
+                <div class="col-md-4 pool mb-3">
+                    <h3 class="welcome_overlay">ENJOY OUR SPARKLING POOL</h3>
+                    <p class="overlay_welcome">
+                        We invite you to lay back and relax beside our very inviting pool. Allow all stress to melt away as you float beneath the warmth of the sun in the fresh, cool water of our guest pool. Our pool area is complete with beautiful landscape, and comfortable
+                        outdoor furniture to enhance any afternoon.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="attractions">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="attraction_title mb-3">
+                        <div class="attraction_title1">Stage Coach lodge in Monterey</div>
+                        <div class="attraction_title2">Attractions</div>
+                        <div class="attraction_title3">Monterey, California</div>
+                        <p class="mt-3 text-center">Monterey Peninsula offers the vacation experience of a lifetime. The Monterey Peninsula has a beauty that entices visitors from all over the world. Monterey is located along the central coast of California about 120 miles south
+                            of San Francisco. The Monterey Peninsula is one of the most scenic areas of the world offering great ocean vistas and the famed 17 Mile Drive, a coastal toll road that offers breathtaking views of the bountiful Pacific Ocean
+                            and the rolling green hills of the world famous Pebble Beach and Spyglass Golf Courses.
+                        </p>
+                        <p class="text-center">Monterey is also home of the world's largest sea life exhibit, the Monterey Bay Aquarium. Pacific Grove, host to one of the oldest working lighthouses on the west coast, comes alive when the monarch butterfly populations migrate
+                            through this tiny coastal town. Carmel offers a picturesque white sand beach and old world charm with its quaint shops. Spectacular beaches, nine world champion golf courses, historic old adobes, Fisherman's Wharf, infamous
+                            Cannery Row, fabulous shopping, and gourmet restaurants all await you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="attraction_image">
+                <ul class="style_li">
+                    <li>
+                        <div class="content img_attr">
+                            <div class="cont_overlay"></div>
+                            <div>
+                                <div>
+                                    <img src="./images/attract1.webp" alt="">
+                                </div>
+                                <div class="cont_desc fadein-right">
+                                    <h3>PLAY</h3>
+                                    <p>GUESTS OF OUR HOTEL CAN GOLF AT BEAUTIFUL AND CHALLENGING COURSES IN MONTEREY
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="content img_attr">
+                            <div class="cont_overlay"></div>
+                            <div>
+                                <div>
+                                    <img src="./images/attract2.webp" alt="">
+                                </div>
+                                <div class="cont_desc fadein-right">
+                                    <h3>EXPLORE</h3>
+                                    <p>DISCOVER BREATHTAKING MONTEREY SCENERY AND HISTORIC LANDMARKS AS A GUEST OF OUR BOUTIQUE HOTEL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden-sm ">
+                        <div class="content img_attr">
+                            <div class="cont_overlay"></div>
+                            <div>
+                                <div>
+                                    <img src="./images/attract3.webp" alt="">
+                                </div>
+                                <div class="cont_desc fadein-right">
+                                    <h3>DISCOVER</h3>
+                                    <p>ICONIC MONTEREY ATTRACTIONS ARE MINUTES AWAY FROM OUR IDEAL LOCATION
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="text-center more">
+                <button class="view brown">View more</button>
+                <span class="bell"><img src="./images/bell-ring.png" alt="" width="30" height="30"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__sisterprop mt-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="d-flex properties text-center">
+                        <div class="sisterprop-title">
+                            <h3 class="sisterprop-title-1">Sister Properties</h3>
+                        </div>
+                        <div class="sisterprop-description">
+                            <h4>When travelling to top tourist destinations in California, we've got covered!</h4>
+                            <p>If you are planning on visiting Yosemite National Park, California stay at either of our hotels at the Westgate or Southgate</p>
+                        </div>
+                        <h4 class="sisterprop-details">Book Directly with us and save!</h4>
+                    </div>
+                    <ul class="style-li d-flex">
+                        <li>
+                            <a href="#" target="blank">
+                                <div>
+                                    <div>
+                                        <img src="/images/ysh.webp" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div>Yosemite Southgate Hotel</div>
+                        </li>
+                        <li>
+                            <a href="#" target="blank">
+                                <div>
+                                    <div>
+                                        <img src="/images/bml.webp" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div>Buck Meadows Lodge</div>
+                        </li>
+                        <li>
+                            <a href="#" target="blank">
+                                <div>
+                                    <div>
+                                        <img src="/images/ywl.webp" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div>Yosemite Westgate Lodge</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="subscribe">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="subscribe_cont">
+                        <div class="sub_title">
+                            <div class="in_block">
+                                <img src="./images/envelope.svg" alt="" class="svg-icon">
+                            </div>
+                            <div class="in_block">
+                                <label>Subscribe</label>
+                                <span>Sign up For our Mailing List</span>
+                            </div>
+                        </div>
+                        <div class="subcribe-input">
+                            <form name="email_form" class="form_email">
+                                <div class="form-group">
+                                    <label for="email" class="hidden">Subscribe</label>
+                                    <input type="email" name="email" id="sub_email" class="form-control" placeholder="Enter Email Address">
+                                    <button class="btn btn-submit" name="signup" title="Sign Up" aria-label="Sign Up">Sign
+                                        Up</button>
+                                </div>
+                                <div class="connect1">
+                                    <div class="connect_cont">
+                                        <textarea name="email" class="email_inp"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="follow_cont">
+                        <div class="follow_title text-center">
+                            <label>Connect</label>
+                            <span>With Us</span>
+                        </div>
+                        <div class="social-icons text-center">
+                            <ul class="d-flex li-style1">
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-facebook.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-youtube.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-yelp.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-tripadvisor.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-instagram.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-linkedin-2.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="follow-icon" src="./images/icons8-skype.svg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg_footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3 logo_cont">
+                        <div class="col-md-12 mb-2">
+                            <img src="./images/logo-new.webp" alt="" class="footer_logo">
+                        </div>
+                        <div class="col-md-12 mt-1 mb-2">
+                            <img src="./images/winner_certificates.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="languages_cont">
+                            <div class="lang">
+                                <select name="languages" id="" class="languages">
+                                    <option value="selected">Languages</option>
+                                    <option value="English">English</option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="Marathi">Marathi</option>
+                                </select>
+                            </div>
+                            <div class="modify">
+                                <button class="modify_btn">Modify/Cancel</button>
+                            </div>
+                            <div class="access">
+                                <img class="wheelchair" src="./images/icons8-wheelchair-50.png" alt="">
+                                <label for="access" class="access_label">Accessibility</label>
+                            </div>
+                        </div> <br>
+                        <div class="footer_li">
+                            <div class="about mx-4">
+                                <ul class="ul_list text-left">
+                                    <li>About Us</li>
+                                    <li>Reviews</li>
+                                    <li>Directions</li>
+                                    <li>News</li>
+                                    <li>Cleaning Protocols</li>
+                                </ul>
+                            </div>
+                            <div class="jobs mx-4">
+                                <ul class="ul_list text-center">
+                                    <li>Jobs</li>
+                                    <li>Blogs</li>
+                                    <li>Lost & Found</li>
+                                    <li>FAQs</li>
+                                    <li>Personal Data Request</li>
+                                </ul>
+                            </div>
+                            <div class="sitemap mx-4">
+                                <ul class="ul_list text-right">
+                                    <li>Sitemap</li>
+                                    <li>Cookie Policy</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Terms & Conditions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="white">
+                        <p class="text-light">Website Design, Development, and Digital Marketing Powered by INNsight. Copyright © 2022 INNsight.com, Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-white">
+            <div class="container">
+                <div class="row">
+                    <ul class="d-flex ul_cities">
+                        <li class="cities_style">Monterey, CA Hotels</li>
+                        <li>|</li>
+                        <li class="cities_style">Attractions in Monterey, CA</li>
+                        <li>|</li>
+                        <li class="cities_style">Monterey, CA Reservations</li>
+                        <li>|</li>
+                        <li class="cities_style1">Monterey, CA Hotel Rooms </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- <div class="d-flex bg_scroll_color"> -->
+    <a href="#top" id="scroll" style="display: block; color: white;"><img src="./images/icons8-upward-arrow-32-removebg-preview.png" alt=""></a>
+    <!-- </div> -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
