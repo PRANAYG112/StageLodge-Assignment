@@ -1,11 +1,13 @@
 function closeNav() {
     document.getElementById("mySidebar").style.width = 'auto';
+    document.getElementById("mySidebar").style.height = '32%';
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("mySidebar").style.backgroundColor = "#3939398a";
 }
 
 function extendNav() {
     document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.height = "100%";
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("mySidebar").style.backgroundColor = "#35302f";
     document.getElementById("mySidebar").style.fontSize = "15px";
